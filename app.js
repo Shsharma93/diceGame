@@ -74,12 +74,14 @@ document.querySelector('.btn-continue').addEventListener('click', function () {
     document.querySelector('.btn-roll').style.display = 'block';
     document.querySelector('.btn-continue').style.display = 'none';
     document.querySelector('.btn-alert').style.display = 'none';
+    document.querySelector('.btn-happy').style.display = 'none';
   }
 })
 
 function calculateScores() {
   scores[activePlayer] += roundScore;
   document.getElementById('score-' + activePlayer).textContent = scores[activePlayer];
+  document.querySelector('.btn-happy').style.display = 'block';
 
 }
 
@@ -138,6 +140,8 @@ function gameInit() {
   document.querySelector('.btn-hold').style.display = 'block';
   document.querySelector('.btn-roll').style.display = 'block';
   document.querySelector('.btn-alert').style.display = 'none';
+  document.querySelector('.btn-happy').style.display = 'none';
+
 }
 
 
