@@ -19,7 +19,6 @@ var scores, roundScore, activePlayer, gamePlaying, temp = 0, val1 = 0, val2 = 0,
 
 gameInit();
 
-
 document.querySelector('.btn-roll').addEventListener('click', function () {
   if (gamePlaying) {
     //Random number
